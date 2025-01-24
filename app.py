@@ -5,7 +5,6 @@ import numpy as np
 # Load the pre-trained model (ensure this file exists in your project directory)
 model = joblib.load("gradient_boosting_winning_model.pkl")
 
-
 app = Flask(__name__)
 
 # Index route with basic instructions
@@ -119,10 +118,45 @@ def simulate():
             <h1>Credit Risk Predictor</h1>
             <p>Enter the 13 feature values below:</p>
             <form method="post">
-                {% for i in range(1, 14) %}
-                    <label for="f{{i}}">Feature {{ i }}:</label>
-                    <input type="text" id="f{{i}}" name="f{{i}}" required>
-                {% endfor %}
+                <label for="f1">Status of Existing Checking Account (0 or 1):</label>
+                <input type="text" id="f1" name="f1" required>
+                
+                <label for="f2">Duration in Months (e.g., 6-60):</label>
+                <input type="text" id="f2" name="f2" required>
+                
+                <label for="f3">Purpose (0 or 1):</label>
+                <input type="text" id="f3" name="f3" required>
+                
+                <label for="f4">Credit History (0 or 1):</label>
+                <input type="text" id="f4" name="f4" required>
+                
+                <label for="f5">Present Employment Since (0 or 1):</label>
+                <input type="text" id="f5" name="f5" required>
+                
+                <label for="f6">Savings Account Bonds (0 or 1):</label>
+                <input type="text" id="f6" name="f6" required>
+                
+                <label for="f7">Other Debtors/Guarantors (0 or 1):</label>
+                <input type="text" id="f7" name="f7" required>
+                
+                <label for="f8">Other Installment Plans (0 or 1):</label>
+                <input type="text" id="f8" name="f8" required>
+                
+                <label for="f9">Personal Status and Sex (0 or 1):</label>
+                <input type="text" id="f9" name="f9" required>
+                
+                <label for="f10">Status of Existing Checking Account (0 or 1):</label>
+                <input type="text" id="f10" name="f10" required>
+                
+                <label for="f11">Savings Account Bonds (0 or 1):</label>
+                <input type="text" id="f11" name="f11" required>
+                
+                <label for="f12">Credit Amount (e.g., 1000-10000):</label>
+                <input type="text" id="f12" name="f12" required>
+                
+                <label for="f13">Personal Status and Sex (0 or 1):</label>
+                <input type="text" id="f13" name="f13" required>
+                
                 <input type="submit" value="Predict">
             </form>
             {% if prediction is defined %}
