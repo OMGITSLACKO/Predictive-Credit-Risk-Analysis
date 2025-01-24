@@ -142,7 +142,7 @@ def simulate():
                 <label for="f8">Other Installment Plans (0 or 1):</label>
                 <input type="text" id="f8" name="f8" required>
                 
-                <label for="f9">Personal Status and Sex (0 or 1):</label>
+                <label for="f9">Personal Status and Sex (A92) (0 or 1):</label>
                 <input type="text" id="f9" name="f9" required>
                 
                 <label for="f10">Status of Existing Checking Account (0 or 1):</label>
@@ -154,7 +154,7 @@ def simulate():
                 <label for="f12">Credit Amount (e.g., 1000-10000):</label>
                 <input type="text" id="f12" name="f12" required>
                 
-                <label for="f13">Personal Status and Sex (0 or 1):</label>
+                <label for="f13">Personal Status and Sex (A93) (0 or 1):</label>
                 <input type="text" id="f13" name="f13" required>
                 
                 <input type="submit" value="Predict">
