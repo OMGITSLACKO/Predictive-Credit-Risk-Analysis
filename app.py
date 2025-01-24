@@ -3,7 +3,8 @@ import joblib
 import numpy as np
 
 # Load the pre-trained model (ensure this file exists in your project directory)
-model = joblib.load("./gradient_boosting_winning_model.pkl")
+model = joblib.load("gradient_boosting_winning_model.pkl")
+
 
 app = Flask(__name__)
 
